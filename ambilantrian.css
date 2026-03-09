@@ -20,17 +20,19 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .logo-container {
-  padding: 0 20px;
-  margin-bottom: 50px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .logo-container img {
-  width: 120px;
+  width: 150px;   /* ukuran logo */
+  height: auto;   /* menjaga rasio */
 }
 
 .nav-links {
