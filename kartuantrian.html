@@ -6,100 +6,132 @@
 
 <style>
 
-body{
-    margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#e6e6e6;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
-.container{
-    display:flex;
+body{
+display:flex;
+height:100vh;
+background:#d9d9d9;
+background-image: radial-gradient(#cfcfcf 2px, transparent 2px);
+background-size:40px 40px;
 }
 
 /* SIDEBAR */
 
 .sidebar{
-    width:220px;
-    height:100vh;
-    background:#6b0000;
+width:230px;
+background:#6b0000;
+color:white;
+display:flex;
+flex-direction:column;
 }
 
 .logo{
-    padding:20px;
-    font-weight:bold;
-    font-size:18px;
+padding:20px;
+text-align:center;
 }
 
-.menu {
-    list-style: none;
-    flex-grow: 1;
+.logo img{
+width:150px;
 }
 
-.menu-li {
-    padding: 15px 25px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
+.menu{
+list-style:none;
+margin-top:40px;
 }
 
-.menu li:hover {
-    background: #ffffff;
-    color: #990000;
+.menu li{
+padding:18px 25px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.menu li:hover{
+background:#8b0000;
 }
 
 .active{
-    color:black;
+background:#ffffff;
+color:#6b0000;
+}
+
+/* FOOTER SIDEBAR */
+
+.sidebar-footer{
+margin-top:auto;
+height:60px;
+background:linear-gradient(to top,#990000,transparent);
+clip-path:polygon(0% 100%,20% 70%,40% 90%,60% 60%,80% 85%,100% 70%,100% 100%);
 }
 
 /* MAIN */
 
 .main{
-    flex:1;
+flex:1;
+display:flex;
+flex-direction:column;
 }
 
 .header{
-    background:#b30000;
-    color:white;
-    text-align:center;
-    padding:20px;
-    font-size:20px;
-    font-weight:bold;
+background:#b30000;
+color:white;
+text-align:center;
+padding:20px;
+font-size:26px;
+font-weight:bold;
+letter-spacing:2px;
 }
 
 /* CARD */
 
 .card-container{
-    display:flex;
-    justify-content:center;
-    gap:60px;
-    margin-top:80px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:80px;
+flex:1;
 }
 
 .card{
-    background:#b30000;
-    width:280px;
-    padding:30px;
-    border-radius:15px;
-    text-align:center;
-    color:white;
+background:#b30000;
+width:320px;
+padding:35px;
+border-radius:20px;
+text-align:center;
+color:white;
+}
+
+.card h3{
+margin-bottom:15px;
 }
 
 .inner-card{
-    background:white;
-    color:black;
-    padding:20px;
-    border-radius:10px;
-    margin-top:15px;
+background:#eaeaea;
+color:black;
+padding:25px;
+border-radius:12px;
+}
+
+.inner-card p{
+margin:6px 0;
+font-size:14px;
 }
 
 .ticket{
-    background:black;
-    color:white;
-    font-size:30px;
-    padding:10px 25px;
-    margin-top:10px;
-    display:inline-block;
-    border-radius:8px;
+background:black;
+color:white;
+font-size:40px;
+padding:10px 40px;
+margin-top:12px;
+display:inline-block;
+border-radius:10px;
+font-weight:bold;
 }
 
 </style>
@@ -107,63 +139,70 @@ body{
 
 <body>
 
-<div class="container">
+<!-- SIDEBAR -->
+<div class="sidebar">
 
-    <!-- SIDEBAR -->
-    <div class="sidebar">
-        <div class="logo">Horizon Service Center</div>
+<div class="logo">
+<img src="images/hsc.jpg">
+</div>
 
-        <ul class="menu">
-            <li>Ambil Antrian</li>
-            <li>Daftar Antrian</li>
-            <li class="active">Kartu Antrian</li>
-        </ul>
-    </div>
+<ul class="menu">
+<li>Ambil Antrian</li>
+<li>Daftar Antrian</li>
+<li class="active">Kartu Antrian</li>
+</ul>
 
+<div class="sidebar-footer"></div>
 
-    <!-- MAIN -->
-    <div class="main">
-
-        <div class="header">
-            KARTU ANTRIAN
-        </div>
+</div>
 
 
-        <div class="card-container">
+<!-- MAIN -->
+<div class="main">
 
-            <!-- HARI INI -->
-            <div class="card">
-                <h3>Nomor Antrian</h3>
-
-                <div class="inner-card">
-                    <p>No. Telepon : 085866022278</p>
-                    <p>Hari Ini</p>
-
-                    <div class="ticket">
-                        005
-                    </div>
-                </div>
-            </div>
+<div class="header">
+KARTU ANTRIAN
+</div>
 
 
-            <!-- BESOK -->
-            <div class="card">
-                <h3>Nomor Antrian</h3>
+<div class="card-container">
 
-                <div class="inner-card">
-                    <p>No. Telepon : 085866022278</p>
-                    <p>Besok</p>
+<!-- HARI INI -->
+<div class="card">
 
-                    <div class="ticket">
-                        001
-                    </div>
-                </div>
-            </div>
+<h3>Nomor Antrian</h3>
+
+<div class="inner-card">
+<p>No. Telepon : 085866022278</p>
+<p><b>Hari Ini</b></p>
+
+<div class="ticket">
+005
+</div>
+
+</div>
+
+</div>
 
 
-        </div>
+<!-- BESOK -->
+<div class="card">
 
-    </div>
+<h3>Nomor Antrian</h3>
+
+<div class="inner-card">
+<p>No. Telepon : 085866022278</p>
+<p><b>Besok</b></p>
+
+<div class="ticket">
+001
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 
