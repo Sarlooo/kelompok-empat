@@ -1,0 +1,58 @@
+<?php
+?>
+
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kartu Antrian</title>
+<link rel="stylesheet" href="kartuantrian.css">
+</head>
+<body>
+
+<!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="logo-container">
+        <img src="logo.png" />
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="ambilantrian.html">Ambil Antrian</a></li>
+        <li><a href="daftarantrian.html">Daftar Antrian</a></li>
+        <li><a href="kartuantrian.html">Kartu Antrian</a></li>
+      </ul>
+
+      <div class="sidebar-footer"></div>
+    </div>
+
+    <div class="main-content">
+      <div class="header">KARTU ANTRIAN</div>
+
+      <div class="form-container">
+        <!-- HARI INI -->
+        <div class="card">
+          <h3>Nomor Antrian</h3>
+
+          <div class="inner-card">
+            <p>No. Telepon : 085866022278</p>
+            <p><b>Hari Ini</b></p>
+
+            <div class="ticket">005</div>
+          </div>
+        </div>
+
+        <!-- BESOK -->
+        <div class="card">
+          <h3>Nomor Antrian</h3>
+
+          <div class="inner-card">
+            <p>No. Telepon : 085866022278</p>
+            <p><b>Besok</b></p>
+
+            <div class="ticket">001</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
