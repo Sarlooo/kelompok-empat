@@ -6,7 +6,7 @@ $db   = "kelompok-empat-main";
 
 $koneksi = mysqli_connect($host, $user, $pass, $db);
 
-// Ambil SEMUA data antrian
+// Ambil SEMUA data antrian dari database, urutkan dari tanggal dan waktu pengembalian
 $query = mysqli_query($koneksi, "SELECT * FROM antrian ORDER BY tanggal ASC, waktu_ambil ASC");
 $semua_antrian = [];
 while($row = mysqli_fetch_assoc($query)) {
