@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
     $tanggal_input = $_POST['tanggal'];
     
     date_default_timezone_set('Asia/Jakarta');
-    $waktu_ambil = date('H:i:s');
+    $waktu_ambil = date('Y-m-d H:i:s');
     
     // Logika nomor antrian
     $query_cek = mysqli_query($koneksi, "SELECT MAX(nomor_antrian) as max_nomor FROM antrian WHERE tanggal = '$tanggal_input'");
