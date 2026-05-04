@@ -36,11 +36,9 @@ if (isset($_POST['submit'])) {
     if ($simpan) {
         $id_baru = mysqli_insert_id($koneksi);
         
-        // --- TAMBAHAN BARU: Simpan ID ke Session agar diingat sistem ---
         if(!isset($_SESSION['antrian_saya'])) {
-            $_SESSION['antrian_saya'] = array(); // Buat array jika belum ada
+            $_SESSION['antrian_saya'] = array();
         }
-        // Masukkan ID antrian baru ke dalam daftar antrian milik user ini
         $_SESSION['antrian_saya'][] = $id_baru;
         
         // Redirect
