@@ -20,7 +20,7 @@ while($row = mysqli_fetch_assoc($query)) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Horizon Service Center - Kartu Antrian Semua Orang</title>
-    <link rel="stylesheet" href="daftarantrian.css" />
+    <link rel="stylesheet" href="kartuantrian.css" />
 </head>
 <body>
     <div class="sidebar">
