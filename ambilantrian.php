@@ -39,6 +39,7 @@ if (isset($_POST['submit'])) {
         if(!isset($_SESSION['antrian_saya'])) {
             $_SESSION['antrian_saya'] = array();
         }
+
         $_SESSION['antrian_saya'][] = $id_baru;
         
         // Redirect
