@@ -10,7 +10,7 @@ $koneksi = mysqli_connect($host, $user, $pass, $db);
 $punya_antrian = false;
 $data_antrian = [];
 
-// Cek session untuk melihat antrian milik user ini saja
+// Cek session
 if (isset($_SESSION['antrian_saya']) && count($_SESSION['antrian_saya']) > 0) {
     $punya_antrian = true;
     $id_list = implode(",", $_SESSION['antrian_saya']);
