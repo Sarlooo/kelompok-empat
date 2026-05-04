@@ -16,9 +16,9 @@
         </div>
 
       <ul class="nav-links">
-        <li><a href="ambilantrian.html">Ambil Antrian</a></li>
-        <li><a href="daftarantrian.html">Daftar Antrian</a></li>
-        <li><a href="kartuantrian.html">Kartu Antrian</a></li>
+        <li><a href="ambilantrian.php">Ambil Antrian</a></li>
+        <li><a href="daftarantrian.php">Daftar Antrian</a></li>
+        <li><a href="kartuantrian.php">Kartu Antrian</a></li>
       </ul>
 
       <div class="sidebar-footer"></div>
